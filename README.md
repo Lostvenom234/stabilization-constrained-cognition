@@ -113,5 +113,23 @@ src/
 ---
 
 ## Status
+## Installation
+
+pip install -r requirements.txt
+
+## Running
+
+Open either notebook:
+
+- notebooks/recursive_sde_cognition.ipynb
+- notebooks/stabilization_constrained_llm.ipynb
+
+The notebooks were originally developed in Google Colab but can also be run locally using Jupyter.
+## Research Status
+
+This repository contains exploratory research prototypes.
+The presented models are experimental and are intended
+to investigate hypotheses about stabilization and
+grounding in generative systems.
 
 This repository contains exploratory research prototypes investigating stabilization, grounding, and recursive cognition in generative AI systems.
