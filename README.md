@@ -34,17 +34,25 @@ where:
 
 This formulation is used as a conceptual and computational framework for studying stabilization in generative systems. Within this repository, the framework is explored both as a general recursive cognition model and as an operational interpretation of transformer-based language model dynamics.
 
-```
-```
+---
 
+## Repository Structure
+
+```text
+notebooks/
+├── recursive_sde_cognition.ipynb
+└── stabilization_constrained_llm.ipynb
+```
 
 ---
 
 ## Notebook 1: Recursive SDE Cognition Framework
 
-File:
+**File:**
 
+```text
 notebooks/recursive_sde_cognition.ipynb
+```
 
 ### Objective
 
@@ -68,9 +76,11 @@ Can recursive reconstruction stabilize generative systems while preserving adapt
 
 ## Notebook 2: Stabilization-Constrained Cognition in LLMs
 
-File:
+**File:**
 
+```text
 notebooks/stabilization_constrained_llm.ipynb
+```
 
 ### Objective
 
@@ -99,55 +109,75 @@ The LLM notebook provides an operationalization of that model using transformer 
 
 Conceptually:
 
-Theory → Recursive SDE Cognition
+```text
+High-Level Framework
+        ↓
+Recursive SDE Cognition
 
-Implementation → Stabilization-Constrained LLM Dynamics
+        ↓
+Transformer Operationalization
 
-The second notebook can be viewed as an experimental interpretation of the first within modern large language models.
+        ↓
+Stabilization-Constrained LLM Dynamics
+```
 
-The Recursive SDE notebook investigates stabilization as a general
-recursive dynamical process.
+The Recursive SDE notebook investigates stabilization as a general recursive dynamical process.
 
-The Stabilization-Constrained LLM notebook operationalizes the same
-ideas within transformer architectures by mapping theoretical variables
-to hidden states, grounding representations, and generation dynamics.
+The Stabilization-Constrained LLM notebook operationalizes the same ideas within transformer architectures by mapping theoretical variables to hidden states, grounding representations, and generation dynamics.
 
-Together, the notebooks explore whether stabilization principles can
-provide a useful lens for understanding and controlling generative AI
-systems.
----
-
-## Repository Structure
-
-notebooks/
-
-* recursive_sde_cognition.ipynb
-* stabilization_constrained_llm.ipynb
-
-src/
-
-* future reusable implementations
+Together, the notebooks explore whether stabilization principles can provide a useful lens for understanding and controlling generative AI systems.
 
 ---
 
-## Status
+## Contributions
+
+This repository contributes:
+
+* A recursive SDE-based cognition framework.
+* A stabilization-oriented interpretation of generative systems.
+* An operationalization of theoretical variables using transformer hidden states.
+* Experimental studies of grounding, entropy, and stabilization dynamics in LLMs.
+* Exploratory investigations into feedback-driven stabilization and reconstruction processes.
+
+---
+
 ## Installation
 
+```bash
 pip install -r requirements.txt
+```
+
+---
 
 ## Running
 
 Open either notebook:
 
-- notebooks/recursive_sde_cognition.ipynb
-- notebooks/stabilization_constrained_llm.ipynb
+```text
+notebooks/recursive_sde_cognition.ipynb
+notebooks/stabilization_constrained_llm.ipynb
+```
 
-The notebooks were originally developed in Google Colab but can also be run locally using Jupyter.
+The notebooks were originally developed in Google Colab but can also be run locally using Jupyter Notebook or JupyterLab.
+
+---
+
 ## Research Status
 
 This repository contains exploratory research prototypes.
-The presented models are experimental and are intended
-to investigate hypotheses about stabilization and
-grounding in generative systems.
 
-This repository contains exploratory research prototypes investigating stabilization, grounding, and recursive cognition in generative AI systems.
+The presented models are experimental and are intended to investigate hypotheses about stabilization, grounding, feedback, and recursive cognition in generative systems.
+
+The framework should be interpreted as a research perspective and computational modeling approach rather than a validated theory of cognition.
+
+---
+
+## Citation
+
+If this repository contributes to your research, please cite the associated publication when available. Citation information will be added upon publication.
+
+---
+
+## License
+
+This project is released under the MIT License. See the LICENSE file for details.
