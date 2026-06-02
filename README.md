@@ -17,18 +17,26 @@ Under this perspective, stable intelligence emerges not from a single computatio
 
 ## High-Level Perspective
 
-We view generation as the evolution of an internal state:
+The framework models generative systems as evolving dynamical states influenced by memory, grounding, and feedback:
 
-G(t)
+```math
+dG_t = \mu(G_t, M_t, S_t, F_t)\,dt + \sigma dW_t
+```
 
-which changes through interactions with memory, sensory grounding, and feedback.
+where:
 
-Two complementary implementations of this idea are explored in this repository:
+* **Generative State (G_t)** — the evolving internal representation of the system's current generative trajectory.
+* **Memory (M_t)** — accumulated historical information and prior states that constrain future evolution.
+* **Sensory Grounding (S_t)** — external observations, prompts, or data streams that anchor generation to available evidence.
+* **Feedback (F_t)** — corrective, reconstructive, or evaluative signals that influence subsequent state updates.
+* **Drift Term (μ)** — the deterministic component governing state evolution as a function of memory, grounding, and feedback.
+* **Diffusion Term (σdW_t)** — a stochastic component representing uncertainty, exploration, or variability in the generative process.
 
-1. Recursive SDE Cognition Framework
-2. Stabilization-Constrained Cognition in Large Language Models
+This formulation is used as a conceptual and computational framework for studying stabilization in generative systems. Within this repository, the framework is explored both as a general recursive cognition model and as an operational interpretation of transformer-based language model dynamics.
 
-Together they investigate whether recursive stabilization can serve as a general organizing principle for generative AI systems.
+```
+```
+
 
 ---
 
@@ -97,6 +105,16 @@ Implementation → Stabilization-Constrained LLM Dynamics
 
 The second notebook can be viewed as an experimental interpretation of the first within modern large language models.
 
+The Recursive SDE notebook investigates stabilization as a general
+recursive dynamical process.
+
+The Stabilization-Constrained LLM notebook operationalizes the same
+ideas within transformer architectures by mapping theoretical variables
+to hidden states, grounding representations, and generation dynamics.
+
+Together, the notebooks explore whether stabilization principles can
+provide a useful lens for understanding and controlling generative AI
+systems.
 ---
 
 ## Repository Structure
